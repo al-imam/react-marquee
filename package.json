@@ -1,0 +1,36 @@
+{
+  "name": "infinite-marquee-with-framer-motion-wheel-scroll",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@react-hook/window-size": "3.1.1",
+    "@types/normalize-wheel": "1.0.1",
+    "framer-motion": "10.9.1",
+    "loader-utils": "3.2.1",
+    "normalize-wheel": "1.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "react-use": "17.4.0",
+    "wipe.css": "1.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "typescript": "4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

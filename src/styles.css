@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
+
+html,
+body {
+  overscroll-behavior-x: none;
+}
+
+html {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1b1a17;
+  z-index: 0;
+}
+
+body {
+  color: #e6d5b8;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+body:before {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  content: "Drag or scroll";
+}
+
+.loader {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.marquee {
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  cursor: -webkit-grab;
+  z-index: 1;
+}
+
+.item {
+  font-size: 30vw;
+  letter-spacing: -0.05em;
+  padding-right: 0.25em;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  color: white;
+  /* will-change: transform; */
+}
+
+.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e6d5b8;
+}
+
+a {
+  user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  cursor: grab; /* Cursor style */
+}
+
+button:focus {
+  outline: 1px solid red;
+}
